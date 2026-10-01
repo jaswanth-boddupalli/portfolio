@@ -27,7 +27,7 @@ export default function PublicationsSection() {
 
   return (
     <section id="publications" className="py-24 bg-slate-950 text-slate-100 border-t border-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
         {/* Section Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>

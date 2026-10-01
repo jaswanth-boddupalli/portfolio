@@ -9,7 +9,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="py-24 bg-slate-950 text-slate-100 border-t border-slate-900 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 mb-3">
@@ -25,7 +25,7 @@ export default function ExperienceSection() {
         </div>
 
         {/* Vertical Timeline */}
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
           {/* Vertical connecting line */}
           <div className="absolute top-6 bottom-6 left-4 md:left-1/2 -ml-px w-0.5 bg-gradient-to-b from-emerald-500 via-teal-500/50 to-indigo-500/20 hidden md:block" />
           <div className="absolute top-6 bottom-6 left-6 -ml-px w-0.5 bg-gradient-to-b from-emerald-500 via-teal-500/50 to-indigo-500/20 md:hidden" />

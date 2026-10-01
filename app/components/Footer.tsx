@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-950 border-t border-slate-900 py-12 text-slate-400 text-xs">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-900">
           {/* Brand */}
           <div className="flex items-center gap-2.5">

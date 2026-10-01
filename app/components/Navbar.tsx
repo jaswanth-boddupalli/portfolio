@@ -35,7 +35,7 @@ export default function Navbar() {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="w-full px-4 sm:px-8 md:px-12 lg:px-16 flex items-center justify-between">
         {/* Brand / Logo */}
         <Link href="#" className="flex items-center gap-2 group">
           <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-emerald-600 via-teal-500 to-sky-500 p-0.5 shadow-md shadow-emerald-900/30">
