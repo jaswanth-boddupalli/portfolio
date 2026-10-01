@@ -25,6 +25,21 @@ export interface PipelineStage {
   metrics: string;
 }
 
+export interface ExperienceItem {
+  id: string;
+  role: string;
+  institution: string;
+  department: string;
+  period: string;
+  location: string;
+  type: "current" | "doctoral" | "research" | "fellowship";
+  badge?: string;
+  summary: string;
+  highlights: string[];
+  skills: string[];
+  url?: string;
+}
+
 export const PROFILE_DATA = {
   name: "Dr. Jaswanth Boddupalli, Ph.D.",
   preferredName: "Dr. Jaswanth Boddupalli",
@@ -271,4 +286,81 @@ export const PROFILE_DATA = {
       caption: "Reproducible embryogenic callus induction and shoot proliferation plates under laminar flow.",
     },
   ],
+  experience: [
+    {
+      id: "iisc-postdoc",
+      role: "Project Associate II (Postdoctoral Researcher)",
+      institution: "Indian Institute of Science (IISc), Bengaluru",
+      department: "Optics & Microfluidics Instrumentation (OMI) Lab, Dept. of Instrumentation & Applied Physics",
+      period: "Apr 2026 – Present",
+      location: "Bengaluru, Karnataka, India",
+      type: "current",
+      badge: "Active Postdoctoral Fellow",
+      summary:
+        "Leading bioanalytical instrumentation workflows, optical profiling, and spectroscopic evaluation of plant-derived bioactive therapeutics under Prof. Sai Siva Gorthi.",
+      highlights: [
+        "Lead high-resolution optical and spectroscopic profiling workflows for botanical secondary metabolite extracts.",
+        "Engineer automated Python data pipelines integrating spectral data acquisition with cheminformatic docking databases.",
+        "Mentor junior project assistants and research scholars in bioanalytical quality control, instrument calibration, and laboratory safety protocols.",
+      ],
+      skills: ["Bioanalytical Instrumentation", "Optical Profiling", "Scientific Python", "Spectroscopy", "Mentorship"],
+      url: "https://iap.iisc.ac.in/~saisiva.gorthi/people.html",
+    },
+    {
+      id: "vsu-doctoral-spf",
+      role: "Senior Project Fellow (SPF) & Doctoral Researcher",
+      institution: "Vikrama Simhapuri University (VSU)",
+      department: "Department of Biotechnology",
+      period: "Sep 2021 – Mar 2026",
+      location: "Nellore, Andhra Pradesh, India",
+      type: "doctoral",
+      badge: "Ph.D. Conferred 2026",
+      summary:
+        "Spearheaded doctoral investigation on in vitro propagation, somatic embryogenesis, and secondary metabolite elicitation in endangered Caralluma species under Prof. P.V.B. Reddy & Dr. C. Kiranmai.",
+      highlights: [
+        "Standardized time-series elicitation kinetics with Jasmonic Acid and Salicylic Acid in cell suspension cultures, significantly boosting pregnane glycoside yields.",
+        "Maintained and operated departmental bio-instrumentation including GC-MS chromatography, FT-IR spectroscopy, and Soxhlet extraction units.",
+        "Authored 4 peer-reviewed journal articles and a Bentham Science book chapter on medicinal plant micropropagation and conservation.",
+        "Mentored 12+ Master of Science (M.Sc.) Biotechnology postgraduate students in aseptic tissue culture, hormone stoichiometry, and biostatistics.",
+      ],
+      skills: ["Plant Tissue Culture", "Somatic Embryogenesis", "GC-MS", "FT-IR", "Elicitation Kinetics", "Mentorship"],
+    },
+    {
+      id: "hydroponics-investigator",
+      role: "Research Investigator · Controlled Environment Agriculture",
+      institution: "Vikrama Simhapuri University & Agritech Centers",
+      department: "Biotechnology & Hydroponic Systems Facility",
+      period: "2023 – 2025",
+      location: "Andhra Pradesh, India",
+      type: "research",
+      badge: "Published Fieldwork",
+      summary:
+        "Engineered parametric optimization frameworks for Nutrient Film Technique (NFT) hydroponics systems, modeling nutrient kinetics and growth dynamics in soilless crops.",
+      highlights: [
+        "Modeled electrical conductivity (EC), pH dynamics, and nutrient uptake kinetics in soilless Spinacia oleracea and chili cultivation.",
+        "Published 2 peer-reviewed studies in EJBPS and Agricultural Science Digest demonstrating water-efficient cultivation.",
+        "Authored the open-source Python package 'hydroponics' for automated sensor logging, nutrient kinetics, and crop yield forecasting.",
+      ],
+      skills: ["NFT Hydroponics", "Nutrient Kinetics", "Sensor Logging", "Python Modeling", "Resource Optimization"],
+      url: "https://github.com/jaswanth-boddupalli/hydroponics",
+    },
+    {
+      id: "svu-gold-medalist",
+      role: "Master's Research Scholar (University Gold Medalist)",
+      institution: "Sri Venkateswara University (SVU)",
+      department: "Department of Biotechnology",
+      period: "2018 – 2021",
+      location: "Tirupati, Andhra Pradesh, India",
+      type: "fellowship",
+      badge: "University 1st Rank",
+      summary:
+        "Graduated First Rank across the entire university cohort in Master of Science (M.Sc.) Biotechnology, earning the prestigious University Gold Medal.",
+      highlights: [
+        "Awarded University Gold Medal for academic distinction and top research thesis ranking across SVU cohort.",
+        "Completed advanced laboratory coursework in molecular biology, biochemistry, genetic engineering, and biostatistics.",
+        "Conducted foundational research on plant secondary pathways and computational sequence alignment.",
+      ],
+      skills: ["Molecular Biology", "Plant Genetics", "Biostatistics", "University Gold Medal"],
+    },
+  ] as ExperienceItem[],
 };

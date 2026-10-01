@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import ExperienceSection from "./components/ExperienceSection";
 import PipelineSection from "./components/PipelineSection";
 import PublicationsSection from "./components/PublicationsSection";
 import TechStackSection from "./components/TechStackSection";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col bg-slate-950">
       <Navbar />
       <Hero />
+      <ExperienceSection />
       <PipelineSection />
       <PublicationsSection />
       <TechStackSection />

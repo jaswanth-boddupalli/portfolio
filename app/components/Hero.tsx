@@ -48,6 +48,27 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Profile Avatar Overlapping Banner */}
+        <div className="relative -mt-20 sm:-mt-24 mb-6 flex justify-center z-10">
+          <div className="relative p-1.5 rounded-full bg-gradient-to-tr from-emerald-500 via-teal-400 to-sky-500 shadow-2xl shadow-emerald-950/80">
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-slate-950 bg-slate-900">
+              <Image
+                src="/images/profile_photo.png"
+                alt="Dr. Jaswanth Boddupalli, Ph.D."
+                fill
+                priority
+                className="object-cover object-top"
+              />
+            </div>
+            <div
+              className="absolute bottom-1 right-1 sm:bottom-2 sm:right-2 w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-emerald-500 border-2 border-slate-950 flex items-center justify-center shadow-lg"
+              title="Active Postdoctoral Fellow @ IISc"
+            >
+              <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+            </div>
+          </div>
+        </div>
+
         {/* Hero Main Copy */}
         <div className="text-center max-w-4xl mx-auto">
           {/* Institutional & Honor Credential Badges */}

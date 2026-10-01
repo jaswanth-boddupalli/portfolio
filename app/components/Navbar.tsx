@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Download, ExternalLink, Menu, X, Microscope, BookOpen, Layers, Award, Mail, Image as ImageIcon } from "lucide-react";
+import { Download, ExternalLink, Menu, X, Microscope, BookOpen, Layers, Award, Mail, Image as ImageIcon, Briefcase } from "lucide-react";
 import { PROFILE_DATA } from "../data/profile";
 
 export default function Navbar() {
@@ -18,6 +18,7 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
+    { label: "Experience", href: "#experience", icon: Briefcase },
     { label: "Pipeline", href: "#pipeline", icon: Layers },
     { label: "Publications", href: "#publications", icon: BookOpen },
     { label: "Stack", href: "#stack", icon: Microscope },
