@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Award, GraduationCap, Building2, Dna, ExternalLink } from "lucide-react";
 import { PROFILE_DATA } from "../data/profile";
 
@@ -36,9 +37,21 @@ export default function CredentialsSection() {
                 className={`p-6 sm:p-7 rounded-2xl bg-gradient-to-br ${cred.accent} border backdrop-blur-sm transition-all hover:scale-[1.01]`}
               >
                 <div className="flex items-start justify-between gap-4 mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-slate-900/80 border border-slate-700/50 flex items-center justify-center shrink-0">
-                    <Icon className="w-6 h-6" />
-                  </div>
+                  {cred.logo ? (
+                    <div className="w-12 h-12 rounded-xl bg-white p-1.5 shadow-md flex items-center justify-center shrink-0 border border-slate-700/60">
+                      <Image
+                        src={cred.logo}
+                        alt={cred.institution}
+                        width={40}
+                        height={40}
+                        className="object-contain max-h-9 max-w-9"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-11 h-11 rounded-xl bg-slate-900/80 border border-slate-700/50 flex items-center justify-center shrink-0">
+                      <Icon className="w-6 h-6" />
+                    </div>
+                  )}
                   <span className="px-3 py-1 rounded-full text-xs font-bold bg-slate-900/70 border border-slate-700/50 text-slate-200">
                     {cred.year}
                   </span>

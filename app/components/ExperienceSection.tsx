@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Briefcase, Building2, Calendar, MapPin, CheckCircle2, ExternalLink } from "lucide-react";
 import { PROFILE_DATA } from "../data/profile";
 
@@ -54,43 +55,57 @@ export default function ExperienceSection() {
                         isEven ? "md:mr-10" : "md:ml-10"
                       }`}
                     >
-                      {/* Top Meta */}
-                      <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                        <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
-                          <Calendar className="w-3.5 h-3.5" />
-                          <span>{exp.period}</span>
-                        </div>
-
-                        {exp.badge && (
-                          <span
-                            className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold ${
-                              exp.type === "current"
-                                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
-                                : exp.type === "doctoral"
-                                ? "bg-blue-500/20 text-blue-300 border border-blue-500/40"
-                                : "bg-purple-500/20 text-purple-300 border border-purple-500/40"
-                            }`}
-                          >
-                            {exp.badge}
-                          </span>
+                      {/* Card Header with Official University Logo */}
+                      <div className="flex items-start gap-3.5 mb-4">
+                        {exp.logo && (
+                          <div className="w-12 h-12 rounded-xl bg-white p-1.5 shadow-md flex items-center justify-center shrink-0 border border-slate-700/60 mt-0.5">
+                            <Image
+                              src={exp.logo}
+                              alt={exp.institution}
+                              width={40}
+                              height={40}
+                              className="object-contain max-h-9 max-w-9"
+                            />
+                          </div>
                         )}
-                      </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+                            <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-400">
+                              <Calendar className="w-3.5 h-3.5" />
+                              <span>{exp.period}</span>
+                            </div>
 
-                      {/* Role & Institution */}
-                      <h3 className="text-lg sm:text-xl font-bold text-white mb-1">
-                        {exp.role}
-                      </h3>
+                            {exp.badge && (
+                              <span
+                                className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold ${
+                                  exp.type === "current"
+                                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40"
+                                    : exp.type === "doctoral"
+                                    ? "bg-blue-500/20 text-blue-300 border border-blue-500/40"
+                                    : "bg-purple-500/20 text-purple-300 border border-purple-500/40"
+                                }`}
+                              >
+                                {exp.badge}
+                              </span>
+                            )}
+                          </div>
 
-                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-300 font-medium mb-3">
-                        <span className="flex items-center gap-1 text-slate-200">
-                          <Building2 className="w-3.5 h-3.5 text-teal-400" />
-                          {exp.institution}
-                        </span>
-                        <span>·</span>
-                        <span className="flex items-center gap-1 text-slate-400">
-                          <MapPin className="w-3.5 h-3.5 text-slate-500" />
-                          {exp.location}
-                        </span>
+                          <h3 className="text-lg sm:text-xl font-bold text-white leading-snug mb-1">
+                            {exp.role}
+                          </h3>
+
+                          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-300 font-medium">
+                            <span className="flex items-center gap-1 text-slate-200 font-semibold">
+                              <Building2 className="w-3.5 h-3.5 text-teal-400" />
+                              {exp.institution}
+                            </span>
+                            <span>·</span>
+                            <span className="flex items-center gap-1 text-slate-400">
+                              <MapPin className="w-3.5 h-3.5 text-slate-500" />
+                              {exp.location}
+                            </span>
+                          </div>
+                        </div>
                       </div>
 
                       <p className="text-xs text-slate-400 italic mb-4">

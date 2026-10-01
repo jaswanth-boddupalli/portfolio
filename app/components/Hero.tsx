@@ -58,24 +58,48 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Institutional & Honor Credential Badges */}
+          {/* Institutional & Honor Credential Badges with Official University Emblems */}
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-5 max-w-3xl">
             <a
               href={PROFILE_DATA.affiliation.directoryUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/90 border border-teal-500/40 text-teal-300 hover:border-teal-400 hover:bg-slate-800 transition-all shadow-sm"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/90 border border-teal-500/40 text-teal-300 hover:border-teal-400 hover:bg-slate-800 transition-all shadow-sm"
             >
-              <Building2 className="w-3.5 h-3.5 text-teal-400" />
+              <div className="w-4 h-4 rounded bg-white p-0.5 flex items-center justify-center shrink-0">
+                <Image
+                  src="/images/logos/iisc_logo.png"
+                  alt="IISc Logo"
+                  width={14}
+                  height={14}
+                  className="object-contain"
+                />
+              </div>
               <span>IISc Bengaluru · OMI Lab</span>
               <ExternalLink className="w-3 h-3 text-teal-400/80" />
             </a>
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/90 border border-blue-500/40 text-blue-300 shadow-sm">
-              <BookOpen className="w-3.5 h-3.5 text-blue-400" />
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/90 border border-blue-500/40 text-blue-300 shadow-sm">
+              <div className="w-4 h-4 rounded bg-white p-0.5 flex items-center justify-center shrink-0">
+                <Image
+                  src="/images/logos/vsu_logo.png"
+                  alt="VSU Logo"
+                  width={14}
+                  height={14}
+                  className="object-contain"
+                />
+              </div>
               <span>Ph.D. Conferred 2026</span>
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/90 border border-amber-500/40 text-amber-300 shadow-sm">
-              <Award className="w-3.5 h-3.5 text-amber-400" />
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-900/90 border border-amber-500/40 text-amber-300 shadow-sm">
+              <div className="w-4 h-4 rounded bg-white p-0.5 flex items-center justify-center shrink-0">
+                <Image
+                  src="/images/logos/svu_logo.png"
+                  alt="SVU Logo"
+                  width={14}
+                  height={14}
+                  className="object-contain"
+                />
+              </div>
               <span>University Gold Medalist (1st Rank)</span>
             </span>
           </div>

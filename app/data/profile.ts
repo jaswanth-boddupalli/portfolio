@@ -38,6 +38,7 @@ export interface ExperienceItem {
   highlights: string[];
   skills: string[];
   url?: string;
+  logo?: string;
 }
 
 export const PROFILE_DATA = {
@@ -75,6 +76,7 @@ export const PROFILE_DATA = {
       year: "2018–2021",
       badge: "First Rank across cohort in M.Sc. Biotechnology",
       accent: "from-amber-500/20 to-yellow-500/10 border-amber-500/30 text-amber-300",
+      logo: "/images/logos/svu_logo.png",
     },
     {
       title: "Ph.D. in Biotechnology",
@@ -82,6 +84,7 @@ export const PROFILE_DATA = {
       year: "2021–2026",
       badge: "Doctoral Dissertation on Secondary Metabolite Elicitation",
       accent: "from-blue-500/20 to-indigo-500/10 border-blue-500/30 text-blue-300",
+      logo: "/images/logos/vsu_logo.png",
     },
     {
       title: "Project Associate II (Postdoc)",
@@ -89,6 +92,7 @@ export const PROFILE_DATA = {
       year: "2026–Present",
       badge: "Optics & Microfluidics Instrumentation Lab",
       accent: "from-emerald-500/20 to-teal-500/10 border-emerald-500/30 text-emerald-300",
+      logo: "/images/logos/iisc_logo.png",
     },
     {
       title: "CRISPR-Cas Certification",
@@ -296,6 +300,7 @@ export const PROFILE_DATA = {
       location: "Bengaluru, Karnataka, India",
       type: "current",
       badge: "Active Postdoctoral Fellow",
+      logo: "/images/logos/iisc_logo.png",
       summary:
         "Leading bioanalytical instrumentation workflows, optical profiling, and spectroscopic evaluation of plant-derived bioactive therapeutics under Prof. Sai Siva Gorthi.",
       highlights: [
@@ -315,6 +320,7 @@ export const PROFILE_DATA = {
       location: "Nellore, Andhra Pradesh, India",
       type: "doctoral",
       badge: "Ph.D. Conferred 2026",
+      logo: "/images/logos/vsu_logo.png",
       summary:
         "Spearheaded doctoral investigation on in vitro propagation, somatic embryogenesis, and secondary metabolite elicitation in endangered Caralluma species under Prof. P.V.B. Reddy & Dr. C. Kiranmai.",
       highlights: [
@@ -334,6 +340,7 @@ export const PROFILE_DATA = {
       location: "Andhra Pradesh, India",
       type: "research",
       badge: "Published Fieldwork",
+      logo: "/images/logos/vsu_logo.png",
       summary:
         "Engineered parametric optimization frameworks for Nutrient Film Technique (NFT) hydroponics systems, modeling nutrient kinetics and growth dynamics in soilless crops.",
       highlights: [
@@ -353,6 +360,7 @@ export const PROFILE_DATA = {
       location: "Tirupati, Andhra Pradesh, India",
       type: "fellowship",
       badge: "University 1st Rank",
+      logo: "/images/logos/svu_logo.png",
       summary:
         "Graduated First Rank across the entire university cohort in Master of Science (M.Sc.) Biotechnology, earning the prestigious University Gold Medal.",
       highlights: [
