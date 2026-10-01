@@ -64,7 +64,7 @@ export default function Footer() {
         {/* Bottom Attribution */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
           <p>
-            © {new Date().getFullYear()} Dr. Jaswanth Boddupalli. All rights reserved. Peer-reviewed research and monographs indexed on Google Scholar & Scilit.
+            © 2026 Dr. Jaswanth Boddupalli. All rights reserved. Peer-reviewed research and monographs indexed on Google Scholar & Scilit.
           </p>
           <div className="flex items-center gap-3">
             <a
