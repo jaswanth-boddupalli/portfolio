@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <!-- Background Gradient: Deep Botanical Emerald to Hi-Tech Midnight Navy -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#041f17"/>
+      <stop offset="35%" stop-color="#083327"/>
+      <stop offset="70%" stop-color="#0a2e3f"/>
+      <stop offset="100%" stop-color="#081e33"/>
+    </linearGradient>
+
+    <!-- Emerald Leaf / Phytochemistry Gradient -->
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- GC-MS Spectrum Peak Gradient -->
+    <linearGradient id="spectrumBar" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.15"/>
+      <stop offset="70%" stop-color="#34d399" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#6ee7b7" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Transition Gradient: Wet-Lab to Computation -->
+    <linearGradient id="morphLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+
+    <!-- Glassmorphic Card Fill -->
+    <linearGradient id="glassCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2f38" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#071b26" stop-opacity="0.88"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1584" height="396" fill="url(#bg)"/>
+
+  <!-- Subtle High-Tech Blueprint Grid in Background -->
+  <g stroke="#38bdf8" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="66" x2="1584" y2="66"/>
+    <line x1="0" y1="132" x2="1584" y2="132"/>
+    <line x1="0" y1="198" x2="1584" y2="198"/>
+    <line x1="0" y1="264" x2="1584" y2="264"/>
+    <line x1="0" y1="330" x2="1584" y2="330"/>
+    <line x1="264" y1="0" x2="264" y2="396"/>
+    <line x1="528" y1="0" x2="528" y2="396"/>
+    <line x1="792" y1="0" x2="792" y2="396"/>
+    <line x1="1056" y1="0" x2="1056" y2="396"/>
+    <line x1="1320" y1="0" x2="1320" y2="396"/>
+  </g>
+
+  <!-- ==================== LEFT AREA: BOTANICAL & WET LAB DOMAIN ==================== -->
+  <!-- Note: Lower-left 0-320px x 200-396px accommodates LinkedIn profile photo circle -->
+  
+  <!-- Subtle stylized Caralluma succulent stems & micropropagation silhouette -->
+  <g stroke="#059669" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.35">
+    <path d="M 35 390 Q 40 310 30 250"/>
+    <path d="M 65 390 Q 70 300 80 230"/>
+    <path d="M 95 390 Q 98 320 115 280"/>
+  </g>
+
+  <!-- GC-MS Spectrometric Peaks (Analytical Metabolomics) -->
+  <g fill="url(#spectrumBar)">
+    <rect x="140" y="270" width="7" height="100" rx="2"/>
+    <rect x="155" y="230" width="7" height="140" rx="2"/>
+    <rect x="170" y="310" width="7" height="60" rx="2"/>
+    <rect x="185" y="190" width="7" height="180" rx="2"/>
+    <rect x="200" y="280" width="7" height="90" rx="2"/>
+    <rect x="215" y="250" width="7" height="120" rx="2"/>
+    <rect x="230" y="330" width="7" height="40" rx="2"/>
+    <rect x="245" y="210" width="7" height="160" rx="2"/>
+    <rect x="260" y="290" width="7" height="80" rx="2"/>
+    <rect x="275" y="240" width="7" height="130" rx="2"/>
+    <rect x="290" y="320" width="7" height="50" rx="2"/>
+    <rect x="305" y="260" width="7" height="110" rx="2"/>
+    <rect x="320" y="300" width="7" height="70" rx="2"/>
+  </g>
+
+  <!-- Chemical Structure: Phenolic / Flavonoid Core Rings (Upper Left) -->
+  <g stroke="#34d399" stroke-opacity="0.45" fill="none" stroke-width="2">
+    <polygon points="110,65 135,50 160,65 160,95 135,110 110,95"/>
+    <circle cx="135" cy="80" r="14" stroke="#34d399" stroke-opacity="0.25" stroke-width="1.5"/>
+    <polygon points="160,65 185,50 210,65 210,95 185,110 160,95" stroke-opacity="0.35"/>
+    <line x1="210" y1="65" x2="230" y2="53" stroke-width="2"/>
+    <text x="235" y="55" fill="#6ee7b7" font-family="Arial, sans-serif" font-size="12" font-weight="bold" opacity="0.7">OH</text>
+  </g>
+
+  <!-- ==================== CENTER AREA: THE "BENCH-TO-IN-SILICO" BRIDGE ==================== -->
+  
+  <!-- Laboratory Culture Erlenmeyer Flask with Bioactive Plant Explant -->
+  <g transform="translate(390, 110)">
+    <path d="M -16 0 L -16 32 Q -16 46 -32 72 Q -42 88 -42 104 Q -42 124 -20 124 L 20 124 Q 42 124 42 104 Q 42 88 32 72 Q 16 46 16 32 L 16 0 Z"
+          fill="none" stroke="#6ee7b7" stroke-width="3" stroke-opacity="0.85"/>
+    <line x1="-24" y1="0" x2="24" y2="0" stroke="#6ee7b7" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- Plant Shoot emerging from culture base -->
+    <path d="M 0 124 Q 0 95 0 78" stroke="#34d399" stroke-width="3" fill="none"/>
+    <path d="M 0 100 Q -24 90 -28 70 Q -8 72 0 92" fill="url(#leaf)" opacity="0.95"/>
+    <path d="M 0 88 Q 24 78 28 58 Q 8 60 0 80" fill="url(#leaf)" opacity="0.95"/>
+    
+    <!-- Culture Liquid Surface -->
+    <path d="M -35 95 Q -15 88 0 95 Q 15 102 35 95 L 35 116 Q 35 120 25 120 L -25 120 Q -35 120 -35 116 Z" fill="#10b981" opacity="0.25"/>
+  </g>
+
+  <!-- Dynamic Trajectory: Explant -> Secondary Metabolites -> Virtual Screening Grid -->
+  <path d="M 450 170 C 530 160, 580 140, 640 130" stroke="url(#morphLine)" stroke-width="2" fill="none" stroke-dasharray="6 4" opacity="0.85"/>
+
+  <!-- Molecular Docking / 3D Receptor Binding Mesh -->
+  <g>
+    <!-- Organic Molecule Ligand -->
+    <g stroke="url(#morphLine)" stroke-width="2" fill="none" opacity="0.9">
+      <line x1="570" y1="90" x2="608" y2="68"/>
+      <line x1="608" y1="68" x2="648" y2="88"/>
+      <line x1="648" y1="88" x2="650" y2="132"/>
+      <line x1="650" y1="132" x2="612" y2="154"/>
+      <line x1="612" y1="154" x2="572" y2="134"/>
+      <line x1="572" y1="134" x2="570" y2="90"/>
+      <!-- Functional group extensions -->
+      <line x1="648" y1="88" x2="685" y2="70"/>
+      <line x1="612" y1="154" x2="605" y2="195"/>
+    </g>
+    <g fill="#6ee7b7">
+      <circle cx="570" cy="90" r="4.5"/>
+      <circle cx="608" cy="68" r="4.5"/>
+      <circle cx="648" cy="88" r="4.5"/>
+      <circle cx="650" cy="132" r="4.5"/>
+      <circle cx="612" cy="154" r="4.5"/>
+      <circle cx="572" cy="134" r="4.5"/>
+      <circle cx="685" cy="70" r="5" fill="#38bdf8"/>
+      <circle cx="605" cy="195" r="5" fill="#38bdf8"/>
+    </g>
+
+    <!-- Computational Receptor Lattice / Neural Network Graph -->
+    <g stroke="#38bdf8" stroke-opacity="0.55" stroke-width="1.6">
+      <line x1="685" y1="70" x2="745" y2="52"/>
+      <line x1="685" y1="70" x2="750" y2="115"/>
+      <line x1="650" y1="132" x2="750" y2="115"/>
+      <line x1="605" y1="195" x2="745" y2="185"/>
+      <line x1="650" y1="132" x2="745" y2="185"/>
+      <line x1="745" y1="52" x2="750" y2="115"/>
+      <line x1="750" y1="115" x2="745" y2="185"/>
+      <line x1="745" y1="52" x2="815" y2="90"/>
+      <line x1="750" y1="115" x2="815" y2="90"/>
+      <line x1="750" y1="115" x2="810" y2="155"/>
+      <line x1="745" y1="185" x2="810" y2="155"/>
+      <line x1="815" y1="90" x2="810" y2="155"/>
+    </g>
+    <g fill="#38bdf8">
+      <circle cx="745" cy="52" r="5.5"/>
+      <circle cx="750" cy="115" r="5.5"/>
+      <circle cx="745" cy="185" r="5.5"/>
+      <circle cx="815" cy="90" r="6" fill="#818cf8"/>
+      <circle cx="810" cy="155" r="6" fill="#818cf8"/>
+    </g>
+
+    <!-- Virtual Screening Binding Energy Result Node -->
+    <line x1="815" y1="90" x2="875" y2="122" stroke="#a5b4fc" stroke-width="2" stroke-dasharray="3 3"/>
+    <line x1="810" y1="155" x2="875" y2="122" stroke="#a5b4fc" stroke-width="2" stroke-dasharray="3 3"/>
+    <circle cx="875" cy="122" r="8" fill="#a5b4fc" filter="url(#glow)"/>
+    <circle cx="875" cy="122" r="16" fill="none" stroke="#a5b4fc" stroke-opacity="0.4" stroke-width="1.5"/>
+
+    <!-- Subtle Molecular & Bioinformatics Annotations -->
+    <g fill="#38bdf8" opacity="0.45" font-family="'Courier New', monospace" font-size="11" font-weight="bold">
+      <text x="690" y="245">ΔG: -9.4 kcal/mol</text>
+      <text x="755" y="268">GC-MS m/z: 426.3</text>
+      <text x="660" y="290">Caralluma fimbriata</text>
+      <text x="785" y="312">RMSD &lt; 1.5Å</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT AREA: EXECUTIVE SCIENTIFIC CREDENTIAL CARD ==================== -->
+  
+  <!-- Subtle Frosted Glass Backing Plate -->
+  <rect x="910" y="38" width="634" height="320" rx="16" fill="url(#glassCard)" stroke="#38bdf8" stroke-opacity="0.18" stroke-width="1.2"/>
+
+  <!-- Identity & Headline Block -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="end">
+    
+    <!-- Primary Name -->
+    <text x="1514" y="98" fill="#ffffff" font-size="38" font-weight="800" letter-spacing="-0.5">Dr. Jaswanth Boddupalli, Ph.D.</text>
+    
+    <!-- Institutional Affiliation Badge -->
+    <rect x="1090" y="116" width="424" height="30" rx="6" fill="#047857" fill-opacity="0.4" stroke="#10b981" stroke-opacity="0.5"/>
+    <text x="1502" y="137" fill="#6ee7b7" font-size="14.5" font-weight="700">Project Associate II · Indian Institute of Science (IISc), Bengaluru</text>
+    
+    <!-- Sub-Affiliation Lab -->
+    <text x="1514" y="174" fill="#93c5fd" font-size="15" font-weight="600">Optics &amp; Microfluidics Instrumentation (OMI) Lab · Dept. of Instrumentation &amp; Applied Physics</text>
+
+    <!-- Accent Divider Bar -->
+    <rect x="1114" y="192" width="400" height="2.5" rx="1" fill="url(#morphLine)" opacity="0.85"/>
+
+    <!-- Core Research Domains -->
+    <text x="1514" y="226" fill="#e0e7ff" font-size="16.5" font-weight="600">Plant Metabolomics  ·  In Silico Drug Discovery  ·  Bioinformatics</text>
+    <text x="1514" y="254" fill="#a7f3d0" font-size="14" font-weight="500">Phytochemical Fingerprinting (GC-MS, FT-IR)  ·  Molecular Docking &amp; Dynamics</text>
+
+    <!-- Verified Links & Contact Details -->
+    <g font-size="13.5" font-weight="600" opacity="0.95">
+      <text x="1514" y="302" fill="#38bdf8">Google Scholar: Dr. Boddupalli Krishna Jaswanth</text>
+      <text x="1514" y="328" fill="#a5b4fc">linkedin.com/in/jaswanthboddupalli  ·  jaswanthkrish96@gmail.com</text>
+    </g>
+  </g>
+</svg>

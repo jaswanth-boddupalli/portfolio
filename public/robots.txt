@@ -1,0 +1,6 @@
+# robots.txt for Dr. Jaswanth Boddupalli (github.com/jaswanth-boddupalli)
+User-agent: *
+Allow: /
+
+# Canonical LLM and Machine Context
+# https://raw.githubusercontent.com/jaswanth-boddupalli/jaswanth-boddupalli/main/llms.txt
