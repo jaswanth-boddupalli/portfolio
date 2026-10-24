@@ -14,15 +14,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jaswanth-boddupalli.vercel.app"),
-  title: "Dr. Jaswanth Boddupalli, Ph.D. | Plant Metabolomics & In Silico Drug Discovery",
+  title: "Dr. Jaswanth Boddupalli, Ph.D. | Plant Metabolomics, AI Digital Twins & Drug Discovery",
   description:
-    "Official academic portfolio of Dr. Jaswanth Boddupalli, Postdoctoral Researcher at Indian Institute of Science (IISc), Bengaluru. Conferred Ph.D. in Biotechnology, University Gold Medalist. Bridging plant tissue culture and secondary metabolite elicitation with GC-MS metabolomics and computational AutoDock/RDKit virtual screening.",
+    "Official academic portfolio of Dr. Jaswanth Boddupalli, Postdoctoral Researcher at Indian Institute of Science (IISc), Bengaluru. Conferred Ph.D. in Biotechnology, University Gold Medalist. Bridging plant tissue culture and secondary metabolite elicitation with AI digital twins, hyperspectral biosensing, and computational AutoDock/RDKit virtual screening.",
   keywords: [
     "Jaswanth Boddupalli",
     "Boddupalli Krishna Jaswanth",
     "IISc Bengaluru",
     "Optics and Microfluidics Instrumentation",
     "Plant Metabolomics",
+    "AI Digital Twins",
+    "Hyperspectral Biosensing",
+    "PROSAIL",
     "In Silico Drug Discovery",
     "AutoDock Vina",
     "RDKit",
@@ -38,9 +41,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Dr. Jaswanth Boddupalli", url: "https://github.com/jaswanth-boddupalli" }],
   creator: "Dr. Jaswanth Boddupalli",
   openGraph: {
-    title: "Dr. Jaswanth Boddupalli, Ph.D. | Plant Metabolomics & In Silico Drug Discovery",
+    title: "Dr. Jaswanth Boddupalli, Ph.D. | Plant Metabolomics, AI Digital Twins & Drug Discovery",
     description:
-      "Postdoctoral Researcher at IISc Bengaluru (OMI Lab, Dept. IAP). University Gold Medalist. Bridging the Experimental Bench with Scientific Python & Computational Cheminformatics.",
+      "Postdoctoral Researcher at IISc Bengaluru (OMI Lab, Dept. IAP). University Gold Medalist. Bridging the Experimental Bench with Scientific Python, AI Digital Twins & Computational Cheminformatics.",
     url: "https://jaswanth-boddupalli.vercel.app",
     siteName: "Dr. Jaswanth Boddupalli Portfolio",
     images: [

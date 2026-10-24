@@ -45,8 +45,8 @@ export const PROFILE_DATA = {
   name: "Dr. Jaswanth Boddupalli, Ph.D.",
   preferredName: "Dr. Jaswanth Boddupalli",
   formalName: "Boddupalli Krishna Jaswanth",
-  headline: "Postdoctoral Researcher in Plant Metabolomics, Bioanalytical Instrumentation & In Silico Drug Discovery",
-  subheadline: "Bridging the Experimental Bench with Scientific Python & Computational Cheminformatics",
+  headline: "Postdoctoral Researcher in Plant Metabolomics, AI Digital Twins, Biosensing & In Silico Drug Discovery",
+  subheadline: "Bridging the Experimental Bench with Scientific Python, AI Digital Twins & Computational Cheminformatics",
   affiliation: {
     role: "Project Associate II (Postdoc)",
     lab: "Optics and Microfluidics Instrumentation (OMI) Laboratory",
@@ -55,7 +55,7 @@ export const PROFILE_DATA = {
     directoryUrl: "https://iap.iisc.ac.in/~saisiva.gorthi/people.html",
   },
   summary:
-    "Doctoral researcher and bio-instrumentation specialist connecting endangered botanical micropropagation with analytical phytochemistry (GC-MS, FT-IR) and computational drug discovery (AutoDock Vina, RDKit, PyMOL). Conferred Ph.D. in Biotechnology (2026) and awarded University Gold Medal (1st Rank M.Sc. SVU).",
+    "Postdoctoral researcher and bio-instrumentation specialist connecting botanical micropropagation with analytical phytochemistry (GC-MS, FT-IR), cyber-physical AI digital twins (PROSAIL, PLS/XGBoost), and computational drug discovery (AutoDock Vina, RDKit, PyMOL). Conferred Ph.D. in Biotechnology (2026) and awarded University Gold Medal (1st Rank M.Sc. SVU).",
   location: "Bengaluru, Karnataka, India",
   email: "jaswanthkrish96@gmail.com",
   cvPath: "/docs/Dr_Jaswanth_Boddupalli_Curriculum_Vitae.pdf",
