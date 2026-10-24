@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Download, ArrowRight, ExternalLink, Award, Building2, BookOpen } from "lucide-react";
+import { Download, ArrowRight, ExternalLink, Award, Building2, BookOpen, Activity } from "lucide-react";
 import { PROFILE_DATA } from "../data/profile";
 
 export default function Hero() {
@@ -19,8 +19,8 @@ export default function Hero() {
   const highlights = [
     { label: "Current Appointment", val: "IISc Bengaluru", sub: "OMI Lab · Dept. of IAP" },
     { label: "Doctoral Degree", val: "Ph.D. Biotechnology", sub: "Conferred 2026 · VSU" },
-    { label: "Academic Honor", val: "University Gold Medalist", sub: "1st Rank · M.Sc. Cohort" },
-    { label: "Translational Focus", val: "Bench to In Silico", sub: "Wet-Lab + Python + AutoDock" },
+    { label: "University Honor", val: "Gold Medalist (1st Rank)", sub: "M.Sc. Biotechnology SVU" },
+    { label: "Active Deep-Tech R&D", val: "AI Digital Twins & Biosensing", sub: "PROSAIL · RDKit · MQTT" },
   ];
 
   return (
@@ -122,26 +122,33 @@ export default function Hero() {
           {/* Primary Action Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-10 w-full sm:w-auto">
             <a
-              href="#pipeline"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold bg-gradient-to-r from-emerald-600 to-teal-600 text-white hover:from-emerald-500 hover:to-teal-500 shadow-lg shadow-emerald-900/30 hover:shadow-emerald-900/50 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              href="#active-rd"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold bg-gradient-to-r from-teal-500 via-emerald-600 to-indigo-600 text-white hover:from-teal-400 hover:to-indigo-500 shadow-xl shadow-teal-950/60 hover:scale-[1.02] active:scale-[0.98] transition-all"
             >
-              <span>Explore Research Pipeline</span>
+              <Activity className="w-4 h-4 text-emerald-200" />
+              <span>Active Digital Twin & Biosensing</span>
               <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="#pipeline"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-slate-900 text-slate-200 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 transition-all shadow-sm"
+            >
+              <span>Research Pipeline</span>
             </a>
             <a
               href={PROFILE_DATA.cvPath}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm font-bold bg-slate-900 text-slate-200 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 transition-all shadow-sm"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-slate-900 text-slate-200 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 transition-all shadow-sm"
             >
               <Download className="w-4 h-4 text-emerald-400" />
-              <span>Download Academic CV</span>
+              <span>Academic CV</span>
             </a>
             <a
               href={PROFILE_DATA.links.scholar}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-medium bg-slate-900/70 text-slate-300 border border-slate-800 hover:border-slate-600 hover:text-white transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl text-sm font-medium bg-slate-900/70 text-slate-300 border border-slate-800 hover:border-slate-600 hover:text-white transition-all"
             >
               <span>Google Scholar</span>
               <ExternalLink className="w-3.5 h-3.5 text-slate-400" />

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Download, ExternalLink, Menu, X, Microscope, BookOpen, Layers, Award, Mail, Image as ImageIcon, Briefcase } from "lucide-react";
+import { Download, ExternalLink, Menu, X, Microscope, BookOpen, Layers, Award, Mail, Image as ImageIcon, Briefcase, Activity } from "lucide-react";
 import { PROFILE_DATA } from "../data/profile";
 
 export default function Navbar() {
@@ -18,6 +18,7 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
+    { label: "Active R&D", href: "#active-rd", icon: Activity, isHighlight: true },
     { label: "Experience", href: "#experience", icon: Briefcase },
     { label: "Pipeline", href: "#pipeline", icon: Layers },
     { label: "Publications", href: "#publications", icon: BookOpen },
@@ -59,9 +60,19 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className="px-3 py-1.5 rounded-md text-xs lg:text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-all"
+              className={`px-3 py-1.5 rounded-md text-xs lg:text-sm font-medium transition-all flex items-center gap-1.5 ${
+                item.isHighlight
+                  ? "bg-teal-500/15 text-teal-300 border border-teal-500/35 hover:bg-teal-500/25 shadow-sm"
+                  : "text-slate-300 hover:text-white hover:bg-slate-800/60"
+              }`}
             >
-              {item.label}
+              {item.isHighlight && (
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-teal-400" />
+                </span>
+              )}
+              <span>{item.label}</span>
             </Link>
           ))}
         </div>
