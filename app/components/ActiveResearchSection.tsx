@@ -15,7 +15,10 @@ import {
   TrendingUp,
   FileCode2,
   Atom,
+  Lock,
+  ShieldCheck,
 } from "lucide-react";
+import { PROFILE_DATA } from "../data/profile";
 
 function GithubIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
   return (
@@ -77,25 +80,27 @@ export default function ActiveResearchSection() {
                     MQTT :1883 Telemetry
                   </span>
                 </div>
-                <Link
-                  href="https://github.com/jaswanth-boddupalli/digital-twin-plant-toxicity"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-slate-800/90 text-slate-200 hover:text-white hover:bg-slate-700 border border-slate-700/80 transition shadow-sm"
-                >
-                  <GithubIcon className="w-3.5 h-3.5" />
-                  <span>GitHub Repository</span>
-                  <ExternalLink className="w-3 h-3 text-slate-400" />
-                </Link>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/30 shadow-sm">
+                  <Lock className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Confidential R&D · Patent & Paper Pending</span>
+                </div>
               </div>
 
               {/* Title & Description */}
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-teal-300 transition-colors">
                 Living Lab Digital Twin: Biosensing & Plant Ecotoxicology
               </h3>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
                 An industrial-grade cyber-physical system transforming living vegetation into real-time bio-indicators. Simulates 601 hyperspectral optical channels (400–1000 nm), inverts noisy canopy reflectance to physiological traits, and scores contaminant pathway risk via Tox21 neural surrogates.
               </p>
+
+              {/* Confidentiality & IP Notice Banner */}
+              <div className="p-3.5 rounded-xl bg-amber-950/20 border border-amber-500/30 flex items-start gap-2.5 mb-6">
+                <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                <p className="text-xs text-amber-200/90 leading-relaxed">
+                  <strong className="text-amber-300">Confidentiality & IP Notice:</strong> Currently under active translational development and provisional patent filing. Core repository, machine learning model weights, and calibration matrices are maintained in a <strong>private repository</strong> pending formal patent disclosure and manuscript release. Live sandbox access and technical whitepaper available on request under NDA.
+                </p>
+              </div>
 
               {/* Interactive Dashboard Asset Viewer */}
               <div className="rounded-2xl border border-slate-800/80 bg-slate-950/80 p-3 mb-6 overflow-hidden">
@@ -208,7 +213,7 @@ export default function ActiveResearchSection() {
                     <span>4. EPA ECOTOX Risk Benchmarking</span>
                   </div>
                   <p className="text-[11.5px] text-slate-300 leading-relaxed">
-                    Fuses physical biosensor stress with 96-hr $LC_{50}$ thresholds (*Pimephales promelas*, *Daphnia magna*) for automated environmental warnings.
+                    Fuses physical biosensor stress with 96-hr LC<sub>50</sub> thresholds (<em>Pimephales promelas</em>, <em>Daphnia magna</em>) for automated environmental warnings.
                   </p>
                 </div>
               </div>
@@ -226,15 +231,19 @@ export default function ActiveResearchSection() {
                   </span>
                 ))}
               </div>
-              <Link
-                href="https://github.com/jaswanth-boddupalli/digital-twin-plant-toxicity"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-teal-600 hover:bg-teal-500 text-white transition shadow-lg shadow-teal-950/50"
-              >
-                <span>Explore Digital Twin Repo</span>
-                <ChevronRight className="w-3.5 h-3.5" />
-              </Link>
+              <div className="flex items-center gap-3">
+                <span className="text-[11px] text-slate-400 italic hidden sm:inline">
+                  Private Repository (Under IP Embargo)
+                </span>
+                <a
+                  href={`mailto:${PROFILE_DATA.email}?subject=Confidential%20Inquiry:%20Living%20Lab%20Digital%20Twin&body=Dear%20Dr.%20Jaswanth,%0D%0A%0D%0AI%20am%20interested%20in%20learning%20more%20about%20your%20Living%20Lab%20Digital%20Twin%20platform%20and%20would%20like%20to%20request%20access%20to%20the%20technical%20whitepaper%20or%20demonstration%20under%20appropriate%20confidentiality/NDA.`}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 transition shadow-lg shadow-amber-950/40"
+                >
+                  <Lock className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Request NDA Access / Demo</span>
+                  <ChevronRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </div>
           </div>
 
